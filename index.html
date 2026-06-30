@@ -1,12 +1,204 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Challenge-1 Simple Landing Page with Html and CSS</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    <!-- Code Here -->
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arda Dwi Setyono - Personal Page</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="nav-logo">ARDA.</div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ===== HERO SECTION ===== -->
+      <section class="hero" id="home">
+        <img class="hero-avatar" src="asset/hero-.png" alt="photo" />
+        <span class="hero-status">
+          <span class="status-dot"></span>
+          open to opportunities
+        </span>
+        <h1 class="hero-nama">
+          Halo, Saya <span class="highlight">Arda Dwi Setyono</span> 👋
+        </h1>
+        <p class="hero-tagline">
+          Seorang Freelance data spesialist dan content creator yang memiliki
+          ketertarikan dalam mengintegrasikan otomatisasi data dengan dunia web
+          development.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">Lihat Project Saya</a>
+          <a href="#contact" class="btn btn-secondary">Hubungi Saya</a>
+        </div>
+      </section>
+
+      <!-- ABOUT SECTION -->
+
+      <section class="section section-alt" id="about">
+        <div class="section-inner">
+          <span class="section-label">About Me</span>
+          <h2 class="section-title">Siapa Saya</h2>
+          <p class="section-body">
+            Perkenalkan, Saya <strong>Arda Dwi Setyono</strong>- seorang
+            profesional di bidang
+            <strong>Pengolahan Data (Excel & VBA )</strong> dan
+            <strong>Desain Komunikasi Visual</strong>, saya saat ini sedang
+            memperluas keahlian ke arah web development untuk membangun
+            visualisasi data dan platform kreatif yang lebih interaktif. Saya
+            percaya bahwa kombinasi logika data dan estetika desain adalah kunci
+            menciptakan produk digital yang berdampak.
+          </p>
+          <div class="about-meta">
+            <div class="meta-item">
+              <span class="meta-icon">>📍</span>
+              <span>[Trenggalek, Indonesia]</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-icon">🎓</span>
+              <span>[D1 Visual Communication] Design (DKV) & Alumni TKJ]</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-icon">>💻</span>
+              <span>Web Development (in progress...)]</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS SECTION -->
+
+      <section class="section section-alt" id="skills">
+        <div class="section-inner">
+          <span class="section-label">Skills</span>
+          <h2 class="section-title">Yang lagi saya pelajari</h2>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-header">
+                <span class="skill-name">HTML</span>
+                <span class="badge badge-basic">Basic</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" style="width: 65%"></div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-header">
+                <span class="skill-name">CSS</span>
+                <span class="badge badge-learning">learning</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar bar-css" style="width: 50%"></div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-header">
+                <span class="skill-name">Git</span>
+                <span class="badge badge-learning">learning</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar bar-git" style="width: 40%"></div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-header">
+                <span class="skill-name">JavaScript</span>
+                <span class="badge badge-soon">Soon</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar bar-js" style="width: 15%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS SECTION -->
+
+      <section class="section section-alt" id="projects">
+        <div class="section-inner">
+          <span class="section-label">Projects</span>
+          <h2 class="section-title">Hasil Karya Saya</h2>
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-icon">🌐</div>
+              <h3 class="project-name">Personal Landing Page</h3>
+              <p class="project-desc">
+                Project ini di bangun dari nol menggunakan HTML Semantic dan CSS
+                dasar sebagai Assignment pertama saya.
+              </p>
+              <div class="project-tag">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">Git</span>
+              </div>
+            </article>
+
+            <article class="project-card project-soon">
+              <div class="project-icon">✨</div>
+              <h3 class="project-name">Coming Soon</h3>
+              <p class="project-desc">
+                Project selanjutnya sedang dalam pengembangan. Stay tuned untuk
+                update terbaru dari saya.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+
+      <section class="section section-alt" id="contact">
+        <div class="section-inner">
+          <span class="section-label">Contact</span>
+          <h2 class="section-title">Hubungi Saya</h2>
+          <div class="contact-list">
+            <div class="contact-item">
+              <div class="contact-icon">📧</div>
+              <div class="contact-info">
+                <span class="contact-label">Email</span>
+                <span class="contact-value"
+                  >ardadwisetyono27121996@gmail.com</span
+                >
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">📞</div>
+              <div class="contact-info">
+                <span class="contact-label">Phone</span>
+                <span class="contact-value">+62 812-3456-7890</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">📸</div>
+              <div class="contact-info">
+                <span class="contact-label">Instagram</span>
+                <span class="contact-value">@ardadwisetyono</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+      <p>&copy; 2026 Arda Dwi Setyono. All rights reserved.</p>
+    </footer>
+  </body>
 </html>

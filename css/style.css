@@ -1,1 +1,255 @@
-/* code here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+}
+
+/* ==== NAVIGATION - LAYOUT ==== */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #16213e;
+  border-bottom: 1px solid #2a2a4a;
+}
+
+.navbar {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-logo {
+  color: #e0e0e0;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+}
+.nav-links a {
+  color: #e0e0e0;
+  text-decoration: none;
+}
+.nav-links a:hover {
+  color: #ffffff;
+}
+
+/* ==== HERO LAYOUT  ==== */
+.hero {
+  background-color: #1a1a2e;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 5rem 2rem 4rem;
+  text-align: center;
+}
+.hero-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  margin: 0 auto 1.25rem;
+  border: 2px solid #e8e8e4;
+}
+.hero-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background-color: #043a8b;
+  padding: 4px 14px;
+  border-radius: 999px;
+  margin-bottom: 1.25rem;
+}
+.status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #2d7a4f;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ==== BUTTONS - LAYOUT ==== */
+
+.btn {
+  display: inline-block;
+  padding: 10px 24px;
+  border-radius: 8px;
+}
+.btn-primary {
+  background-color: #3b6bda;
+  color: #ffffff;
+}
+.btn-secondary {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ccc;
+}
+
+/* ==== SECCTIONS - LAYOUT ==== */
+
+.section {
+  padding: 4rem 2rem;
+}
+.section-alt {
+  background-color: #16213e;
+}
+.section-inner {
+  max-width: 860px;
+  margin: 0 auto;
+}
+.section-label {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+.section-title {
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+.section-body {
+  color: #aaaaaa;
+  margin-bottom: 1.5rem;
+}
+
+/* ==== ABOUT - LAYOUT ==== */
+
+.about-meta {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e8e8e4;
+}
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+  color: #ffffff;
+}
+.meta-icon {
+  font-size: 16px;
+}
+
+/* ====SKILLS - LAYOUT ==== */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin-top: 1.5rem;
+}
+.skill-card {
+  background-color: #16213e;
+  border: 1px solid #2a2a4a;
+  border-radius: 10px;
+  padding: 1rem 1.1rem;
+}
+.skill-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.skill-bar-bg {
+  background-color: #2a2a4a;
+  height: 4px;
+  border-radius: 999px;
+  overflow: hidden;
+}
+.skill-bar {
+  background-color: #3b6bda;
+  height: 4px;
+  border-radius: 999px;
+}
+.bar-css {
+  background-color: #2d7a4f;
+}
+.bar-git {
+  background-color: #a06000;
+}
+.bar-js {
+  background-color: #6b3db5;
+}
+
+/* ==== PROJECTS - LAYOUT ==== */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin-top: 1.5rem;
+}
+.project-card {
+  background-color: #042580;
+  border: 1px solid #2a2a4a;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+.project-soon {
+  background-color: #0e0e35;
+  border-style: dashed;
+}
+
+/* [==== CONTACT - LAYOUT ==== */
+
+.contact-list {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 1rem 0;
+  border-bottom: 1px solid #2a2a4a;
+}
+.contact-item:last-child {
+  border-bottom: none;
+}
+.contact-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #edf1fc;
+  border: 1px solid #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ==== FOOTER - LAYOUT ==== */
+
+.footer {
+  background-color: #16213e;
+  text-align: center;
+  padding: 2rem;
+  border-top: 1px solid #2a2a4a;
+  color: #666;
+}
